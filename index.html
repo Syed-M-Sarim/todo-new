@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TODO</title>
+    <title>Dark TODO App</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>TODO</h1>
-    <input type="text" placeholder="Enter todo">
-    <button>Add Task</button>
-    <ol>
-        <li>eat <button class="delete"> Delete </button></li>
-        <li>sleep <button class="delete"> Delete </button></li>
-    </ol>
+    <div class="todo-container">
+        <h1>TODO List</h1>
+        <div class="input-group">
+            <input type="text" placeholder="Enter a new task">
+            <button>Add Task</button>
+        </div>
+        <ol>
+            <!-- <li>Eat <button class="delete">Delete</button></li>
+            <li>Sleep <button class="delete">Delete</button></li> -->
+        </ol>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>

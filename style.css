@@ -1,3 +1,158 @@
-body{
-    background-color: grey;
+/* Reset some basic elements for consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a dark background and modern font */
+body {
+    background: #121212;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+}
+
+/* Container for the TODO app */
+.todo-container {
+    background-color: #1e1e1e;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Header styling */
+.todo-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+/* Input and button container */
+.input-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+input[type="text"] {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #333333;
+    border-radius: 8px 0 0 8px;
+    background-color: #2c2c2c;
+    color: #ffffff;
+    font-size: 1em;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+input[type="text"]::placeholder {
+    color: #aaaaaa;
+}
+
+input[type="text"]:focus {
+    border-color: #bb86fc;
+    outline: none;
+    background-color: #3c3c3c;
+}
+
+/* Add Task button styling */
+button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #bb86fc;
+    color: #1e1e1e;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 0 8px 8px 0;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #9a67ea;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Ordered list styling */
+ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+/* List items styling */
+ol li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c2c2c;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+ol li:hover {
+    background-color: #3c3c3c;
+    transform: translateY(-1px);
+}
+
+/* Delete button styling */
+.delete {
+    background-color: #cf6679;
+    border: none;
+    color: #1e1e1e;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 0.9em;
+}
+
+.delete:hover {
+    background-color: #b00020;
+    transform: translateY(-1px);
+}
+
+.delete:active {
+    transform: translateY(0);
+}
+
+/* Smooth scroll bar styling (optional for aesthetics) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #444444;
+    border-radius: 4px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 500px) {
+    .todo-container {
+        padding: 30px 20px;
+    }
+
+    button {
+        padding: 10px 15px;
+    }
+
+    input[type="text"] {
+        padding: 10px 12px;
+    }
 }
